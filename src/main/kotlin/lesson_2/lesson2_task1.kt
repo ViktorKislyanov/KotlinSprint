@@ -4,7 +4,7 @@ fun main() {
 
     val grades = floatArrayOf(3f, 4f, 3f, 5f)
 
-    val averageGrade: Float = (grades.sum() / 4)
+    val averageGrade: Float = (grades.sum() / grades.size)
 
     println(averageGrade)
 }
