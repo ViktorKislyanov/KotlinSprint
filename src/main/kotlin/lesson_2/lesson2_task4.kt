@@ -1,13 +1,15 @@
 package lesson_2
 
-const val usualCrystals: Float = 7f
-const val usualIron:Float = 11f
 
 fun main() {
 
-    val buffedCrystals = (usualCrystals * 0.2).toInt()
+    val usualCrystals = 7f
+    val usualIron = 11f
+    val buffPercents = 20f
+
+    val buffedCrystals = (usualCrystals * (buffPercents / 100)).toInt()
     println("кристаллы, которые дается “сверху” баффом: $buffedCrystals")
 
-    val buffedIron = (usualIron * 0.2).toInt()
+    val buffedIron = (usualIron * (buffPercents/ 100)).toInt()
     println("железо, которое дается “сверху” баффом: $buffedIron")
 }
