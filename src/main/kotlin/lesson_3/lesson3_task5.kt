@@ -11,14 +11,22 @@ fun main() {
     newPosition = "D3"
 
     println("Следующий ход белых: [$startPosition-$newPosition; ${++whiteMoveNumber}]")
+    println()
 
     val playerLog = "D2-D4;0"
 
     val parsed = playerLog.split("-", ";")
-    startPosition = parsed[0]
-    newPosition = parsed[1]
-    whiteMoveNumber = parsed[2].toInt()
 
-    print("Parsed: $startPosition|$newPosition|$whiteMoveNumber")
+    val parsedStartPosition = parsed[0]
+    val parsedNewPosition = parsed[1]
+    val parsedMoveNumber = parsed[2].toInt()
 
+
+    val parsedString = """
+        Стартовая позиция: $parsedStartPosition
+        Новая позиция: $parsedNewPosition
+        Номер хода: $parsedMoveNumber
+    """.trimIndent()
+
+    print(parsedString)
 }
