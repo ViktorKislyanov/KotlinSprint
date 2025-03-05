@@ -32,17 +32,17 @@ fun main() {
     if ((isDamaged == CONDITION_IS_DAMAGED) &&
         (conditionCrewSize) &&
         (provisionBoxesNum > CONDITION_PROVISION_BOXES) &&
-        (favorableWeather == CONDITION_FAVORABLE_WEATHER || favorableWeather == CONDITION_UNFAVORABLE_WEATHER)){
+        (favorableWeather == CONDITION_FAVORABLE_WEATHER || favorableWeather == CONDITION_UNFAVORABLE_WEATHER)
+    ) {
         println("Корабль может отплыть! Удачного плавания!")
-    }
-    else if ((!isDamaged == CONDITION_IS_DAMAGED) &&
-                (crewSize == CONDITION_DAMAGED_SHIP_CREW_SIZE) &&
-                (favorableWeather == CONDITION_FAVORABLE_WEATHER ||
-                        favorableWeather == CONDITION_UNFAVORABLE_WEATHER) &&
-                (provisionBoxesNum > CONDITION_PROVISION_BOXES)){
+    } else if ((!isDamaged == CONDITION_IS_DAMAGED) &&
+        (crewSize == CONDITION_DAMAGED_SHIP_CREW_SIZE) &&
+        (favorableWeather == CONDITION_FAVORABLE_WEATHER ||
+                favorableWeather == CONDITION_UNFAVORABLE_WEATHER) &&
+        (provisionBoxesNum > CONDITION_PROVISION_BOXES)
+    ) {
         println("Корабль может отплыть! Удачного плавания!")
-    }
-    else {
+    } else {
         println("Корабль не может отплыть! Подготовьтесь лучше!")
     }
 }
