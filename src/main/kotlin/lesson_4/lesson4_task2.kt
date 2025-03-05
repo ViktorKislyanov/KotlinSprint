@@ -1,24 +1,23 @@
 package lesson_4
 
+const val AVERAGE_MIN_KG = 35
+const val AVERAGE_MAX_KG = 100
+const val AVERAGE_MAX_LITERS = 100
+
 fun main() {
 
-    val averageMinKg = 35
-    val averageMaxKg = 100
-    val averageMaxLiters = 100
+    var cargoKg = 20
+    var cargoLiters = 80
 
-    val cargo1Kg = 20
+    println("Груз с весом $cargoKg кг и объемом $cargoLiters л" +
+            "соответствует категории 'Average': " +
+            "${((cargoKg > AVERAGE_MIN_KG) && (cargoLiters <= AVERAGE_MAX_KG)) &&
+                    (cargoLiters < AVERAGE_MAX_LITERS)}")
 
-    val cargo2Kg = 50
-    val cargo2Liters = 80
-
-    val cargo3Liters = 100
-
-    var comparisonResult: Boolean = (cargo1Kg > averageMinKg) && (cargo1Kg <= averageMaxKg)
-    println("Груз с весом $cargo1Kg кг соотвествует категории 'Average': $comparisonResult")
-
-    comparisonResult = ((cargo2Kg > averageMinKg) && (cargo2Kg <= averageMaxKg)) && (cargo2Liters < averageMaxLiters)
-    println("Груз с весом $cargo2Kg кг и объемом $cargo2Liters л соотвествует категории 'Average': $comparisonResult")
-
-    comparisonResult = (cargo3Liters < averageMaxLiters)
-    println("Груз с объемом $cargo3Liters л соотвествует категории 'Average': $comparisonResult")
+    cargoKg = 50
+    cargoLiters = 100
+    println("Груз с весом $cargoKg кг и объемом $cargoLiters л" +
+            "соответствует категории 'Average': " +
+            "${((cargoKg > AVERAGE_MIN_KG) && (cargoLiters <= AVERAGE_MAX_KG)) &&
+                    (cargoLiters < AVERAGE_MAX_LITERS)}")
 }
