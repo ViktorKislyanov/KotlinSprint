@@ -16,9 +16,9 @@ fun main() {
         "Благоприятные ли условия сейчас для роста бобовых? " +
                 "${
                     ((CONDITION_IS_SUNNY == isSunny) &&
-                            (CONDITION_IS_AWNING_OPENED == isAwningOpened) &&
-                            (CONDITION_AIR_HUMIDITY == todayAirHumidity) &&
-                            (CONDITION_WRONG_SEASON !== currentSeason))
+                    (CONDITION_IS_AWNING_OPENED == isAwningOpened) &&
+                    (CONDITION_AIR_HUMIDITY == todayAirHumidity) &&
+                    (CONDITION_WRONG_SEASON !== currentSeason))
                 }"
     )
 }
